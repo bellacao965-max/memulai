@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sumber Inspirasi - Simple</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sumber Inspirasi</h1>
+      <p class="muted">AI chat • YouTube random • Google mini</p>
+    </header>
+
+    <main class="main">
+      <section class="left card">
+        <h3>Google mini</h3>
+        <form id="googleForm" action="https://www.google.com/search" method="GET" target="_blank">
+          <input name="q" id="googleInput" placeholder="Cari di Google..." />
+          <button type="submit">Cari</button>
+        </form>
+
+        <h3>Chat AI</h3>
+        <div id="chatBox" class="chatBox"></div>
+        <form id="chatForm" class="chatForm">
+          <input id="chatInput" placeholder="Tanya AI..." autocomplete="off" />
+          <button type="submit">Kirim</button>
+        </form>
+        <div id="aiInfo" class="muted small">Menggunakan model: gpt-3.5-turbo (fallback)</div>
+      </section>
+
+      <aside class="right card">
+        <h3>YouTube Mini (Random)</h3>
+        <div class="controls">
+          <select id="genre">
+            <option value="all">Random Semua</option>
+            <option value="indo">Indonesia</option>
+            <option value="west">Barat</option>
+            <option value="hiphop">Hip-Hop</option>
+            <option value="dangdut">Dangdut</option>
+          </select>
+          <button id="playBtn">Putar</button>
+        </div>
+        <div class="playerWrap" id="playerWrap">Video belum diputar</div>
+        <div id="now" class="muted small"></div>
+      </aside>
+    </main>
+
+    <footer class="footer muted">Simple app — siap deploy ke Render. Isi OPENAI_API_KEY di Environment.</footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

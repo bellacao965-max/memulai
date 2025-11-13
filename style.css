@@ -1,0 +1,16 @@
+:root{--blue:#1976d2;--bg:#f1f8ff;--card:#fff}
+*{box-sizing:border-box}body{font-family:Inter,Arial,sans-serif;background:var(--bg);margin:0;padding:18px;color:#042a3b}
+.container{max-width:1000px;margin:0 auto}
+header h1{margin:0;color:var(--blue)}.muted{color:#6b7280}.small{font-size:12px}
+.main{display:flex;gap:16px;margin-top:12px}
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(3,20,60,0.06)}
+.left{flex:1}.right{width:380px}
+.chatBox{height:260px;border:1px solid #e6f3ff;padding:8px;border-radius:8px;overflow:auto;background:#fff}
+.chatMessage{margin:8px 0;padding:8px;border-radius:8px;max-width:80%}
+.user{margin-left:auto;background:#dfefff}
+.assistant{background:#fff;border:1px solid #eef6ff}
+input,select,button{padding:8px;border-radius:8px;border:1px solid #dfeffd;margin-top:8px;width:100%}
+.playerWrap{height:220px;background:#000;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;margin-top:8px;color:#fff}
+.controls{display:flex;gap:8px}
+.footer{margin-top:14px;text-align:center}
+@media(max-width:900px){.main{flex-direction:column}.right{width:100%}}

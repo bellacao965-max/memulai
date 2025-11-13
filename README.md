@@ -1,2 +1,1 @@
-# memulai
-Aplikasi Kisah Sukses Pro — inspirasi sukses harian dengan AI mentor
+Sumber Inspirasi - Render simple. See .env.example for API key.
